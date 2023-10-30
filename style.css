@@ -10,6 +10,7 @@ body {
   background-image: url(./picture/mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 
   @media screen and (min-width: 420px) {
     background-image: url(./picture/christmas-holidays-composition.jpg);
@@ -55,7 +56,11 @@ body {
   border-radius: 3px;
   box-shadow: 1px 1px 1px 1px grey;
 
-  @media screen and (min-width: 420px) {
+  @media screen and (min-width: 375px) {
+    width: 85px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 103px;
   }
 }

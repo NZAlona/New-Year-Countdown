@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+}
+
+body {
+  background-image: url(./picture/christmas-holidays-composition.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 980px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  line-height: 1.17;
+  margin-top: 520px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 25px;
+}
+
+.box-wrapper {
+  height: 102px;
+  width: 102px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+
+.time-slot {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 52px;
+  color: darkred;
+}
+
+.time-text {
+  text-align: center;
+  margin-top: 3px;
+  font-size: 20px;
+}

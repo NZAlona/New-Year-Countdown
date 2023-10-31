@@ -8,7 +8,7 @@ const refs = {
 const timerId = setInterval(() => {
   const currentTime = new Date();
 
-  const targetTime = new Date('December 31, 2023 23:59:59');
+  const targetTime = new Date(`December 31, 2023 23:59:59`);
 
   const milisec = targetTime - currentTime;
   const convertTime = convertMs(milisec);
@@ -49,3 +49,31 @@ function convertMs(ms) {
 
   return { days, hours, minutes, seconds };
 }
+
+// One more method
+const timeCurrent = new Date().getFullYear();
+
+const newYear = new Date(`Jan 1 ${timeCurrent + 1} 00:00:00`);
+
+function timerCounter() {
+  const todayDate = Date.now();
+  // returns miliseconds fron 01.01.1970 - unixtime called
+
+  const difference = newYear - todayDate;
+
+  // Creating formulas to convert difference ms to days, hrs, min, sec
+
+  // Method Math.floor allows to get int without ,
+  const d = Math.floor(difference / 1000 / 60 / 60 / 24);
+
+  // 1000 = ms; 60 = min; 60 = sec; 24 = day
+  const h = Math.floor((difference / 1000 / 60 / 60) % 24);
+
+  const m = Math.floor((difference / 1000 / 60) % 60);
+  const s = Math.floor((difference / 1000) % 60);
+
+  // Assign these variables to refs = <10 ? "0" : d; if value < 10 then we add 0.
+  // setInterval(timerCounter, 1000)
+}
+
+timerCounter();

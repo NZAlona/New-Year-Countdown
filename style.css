@@ -22,7 +22,12 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
-  height: 980px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  transform: translate(0, -60%);
 }
 
 .main-title {
@@ -31,16 +36,12 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
     Verdana, sans-serif;
   line-height: 1.17;
-  margin-top: 360px;
-
-  @media screen and (min-width: 420px) {
-    margin-top: 520px;
-  }
 }
 
 .box-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 8px;
   margin-top: 23px;
 

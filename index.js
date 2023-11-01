@@ -76,4 +76,4 @@ function timerCounter() {
   // setInterval(timerCounter, 1000)
 }
 
-timerCounter();
+// timerCounter();

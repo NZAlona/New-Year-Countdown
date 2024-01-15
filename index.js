@@ -8,7 +8,7 @@ const refs = {
 const timerId = setInterval(() => {
   const currentTime = new Date();
 
-  const targetTime = new Date(`December 31, 2023 23:59:59`);
+  const targetTime = new Date(`December 31, 2024 23:59:59`);
 
   const milisec = targetTime - currentTime;
   const convertTime = convertMs(milisec);
